@@ -87,5 +87,6 @@ netstat -ntlp | grep "dashboard port"
 in browser type "https://"Maser-IP":"Dashboard-Port""
 and you can see login page of kubernetes dashboard
 ![image](https://user-images.githubusercontent.com/57698853/195895156-3c58cb87-b334-44af-a784-68b76e027154.png)
-and paste Token that creat abow in step "Getting a Bearer Token"
+
+then paste Token that creat abow in step "Getting a Bearer Token"
 and then Login will be success.
