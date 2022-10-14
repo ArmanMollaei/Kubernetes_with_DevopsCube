@@ -76,5 +76,16 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 kubectl get pod -A
 watch "kubectl -n kubernetes-dashboard get pod"
 kubectl -n kubernetes-dashboard describe pod kubernetes-dashboard-74d688b6bc-jvlr8
+docker pull kubernetes/dashboard:v2.0.0
 ```
 
+## login to dashboard ui
+check dashboard port on master
+```
+netstat -ntlp | grep "dashboard port"
+```
+in browser type "https://"Maser-IP":"Dashboard-Port""
+and you can see login page of kubernetes dashboard
+![image](https://user-images.githubusercontent.com/57698853/195895156-3c58cb87-b334-44af-a784-68b76e027154.png)
+and paste Token that creat abow in step "Getting a Bearer Token"
+and then Login will be success.
