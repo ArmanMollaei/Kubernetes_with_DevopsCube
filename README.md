@@ -5,7 +5,7 @@
   * [Sub-nested bullet etc](/file.txt)
 * [Kubernetes Tools:](/file.txt)
 * [Kubernetes Scenario:](/file.txt)
-  * [kubernetes dashboard](/file.txt)
+  * [kubernetes dashboard](/scenario/kubernetes.dashboard.md)
 
 
 
