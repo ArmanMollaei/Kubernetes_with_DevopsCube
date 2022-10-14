@@ -69,3 +69,12 @@ kubectl get pod,service,deployment -n kubernetes-dashboard
 ```
 kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}')
 ```
+
+
+## Check service & pod & namespace dashboard status
+```
+kubectl get pod -A
+watch "kubectl -n kubernetes-dashboard get pod"
+kubectl -n kubernetes-dashboard describe pod kubernetes-dashboard-74d688b6bc-jvlr8
+```
+
